@@ -1,0 +1,6 @@
+@Sicom.WebApi_HostAddress = http://localhost:5260
+
+GET {{Sicom.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
