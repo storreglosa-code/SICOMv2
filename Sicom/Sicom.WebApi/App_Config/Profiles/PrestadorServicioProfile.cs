@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using Sicom.WebApi.Dto;
-using SiComSPF.Models;
+using Sicom.Dominio.Entidades;
 
 namespace Sicom.WebApi.App_Config.Profiles
 {

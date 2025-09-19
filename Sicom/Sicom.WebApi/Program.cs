@@ -45,11 +45,8 @@ builder.Services.AddCors(o => o.AddPolicy("CorsPolicy", b =>
 // AutoMapper
 builder.Services.AddAutoMapper(cfg => { }, typeof(Program).Assembly);
 
-
-
 // Servicios propios
 builder.Services.BindServices();
-
 
 // Swagger (ya estaba en tu Program.cs original)
 builder.Services.AddEndpointsApiExplorer();

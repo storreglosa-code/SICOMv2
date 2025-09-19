@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Sicom.Dominio.Contracts;
+using Sicom.Dominio.Context;
 using Sicom.Dominio.Entidades;
 using Sicom.Dominio.Extensions;
 
@@ -13,8 +14,8 @@ namespace Sicom.Dominio.Implementation
 {
     public class Repositorio<T> : IRepositorio<T> where T : Entidad
     {
-        protected readonly DbContext _dbContext;
-        public Repositorio(DbContext dbContext)
+        protected readonly AppDbContext _dbContext;
+        public Repositorio(AppDbContext dbContext)
         {
             _dbContext = dbContext;
         }

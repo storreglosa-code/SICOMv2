@@ -3,10 +3,10 @@ using Sicom.Dominio.Entidades;
 
 namespace Sicom.Dominio.Entidades
 {
-    public class PrestadorServicio:Entidad
+    public class PrestadorServicio : Entidad
     {
         [Key]
-        public ulong Id { get; set; }
+        public new ulong Id { get; set; }
 
         [Required]
         public string Descripcion { get; set; } = string.Empty;

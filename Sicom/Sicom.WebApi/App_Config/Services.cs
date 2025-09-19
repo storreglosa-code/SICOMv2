@@ -18,12 +18,15 @@ namespace Sicom.WebApi.App_Config
         {
             //Servicios
             services.AddScoped(typeof(IServicio<>), typeof(Servicio<>));
+            services.AddScoped<IEstablecimientoServicio, EstablecimientoServicio>();
+            services.AddScoped<IModeloCelularServicio, ModeloCelularServicio>();
+            services.AddScoped<IObservacionServicio, ObservacionServicio>();
+            services.AddScoped<ILineaAdministrativaServicio, LineaAdministrativaServicio>();
 
             //Repositorios
             services.AddScoped(typeof(IRepositorio<>), typeof(Repositorio<>));
 
             //Contexto
-            services.AddScoped<DbContext, AppDbContext>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();

@@ -10,8 +10,8 @@ namespace Sicom.WebApi.Controllers
     [ApiController]
     public class PrestadorServicioController : ControllerBase
     {
-        private readonly IServicio<PrestadorServicio> _servicio;
         private readonly IMapper _mapper;
+        private readonly IServicio<PrestadorServicio> _servicio;
 
         public PrestadorServicioController(IServicio<PrestadorServicio> servicio, IMapper mapper)
         {

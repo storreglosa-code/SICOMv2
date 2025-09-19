@@ -1,0 +1,12 @@
+SET IDENTITY_INSERT PrestadoresServicios ON;
+INSERT INTO PrestadoresServicios (Id, Descripcion) VALUES (1, 'CITARELLA');
+INSERT INTO PrestadoresServicios (Id, Descripcion) VALUES (2, 'CLARO');
+INSERT INTO PrestadoresServicios (Id, Descripcion) VALUES (3, 'CORPICO');
+INSERT INTO PrestadoresServicios (Id, Descripcion) VALUES (4, 'COTEPAL');
+INSERT INTO PrestadoresServicios (Id, Descripcion) VALUES (5, 'CPE');
+INSERT INTO PrestadoresServicios (Id, Descripcion) VALUES (6, 'IPLAN');
+INSERT INTO PrestadoresServicios (Id, Descripcion) VALUES (7, 'TELEFONICA / MOVISTAR');
+INSERT INTO PrestadoresServicios (Id, Descripcion) VALUES (8, 'TELECOM / PERSONAL');
+INSERT INTO PrestadoresServicios (Id, Descripcion) VALUES (9, 'TPP');
+INSERT INTO PrestadoresServicios (Id, Descripcion) VALUES (10, 'ANURA');
+SET IDENTITY_INSERT PrestadoresServicios OFF;

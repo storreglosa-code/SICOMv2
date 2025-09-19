@@ -25,7 +25,7 @@ namespace Sicom.WebApi.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("SiComSPF.Models.Agente", b =>
+            modelBuilder.Entity("Sicom.Dominio.Entidades.Agente", b =>
                 {
                     b.Property<decimal>("Id")
                         .HasColumnType("decimal(20,0)");
@@ -66,7 +66,7 @@ namespace Sicom.WebApi.Migrations
                     b.ToTable("Agentes");
                 });
 
-            modelBuilder.Entity("SiComSPF.Models.Establecimiento", b =>
+            modelBuilder.Entity("Sicom.Dominio.Entidades.Establecimiento", b =>
                 {
                     b.Property<decimal>("Id")
                         .ValueGeneratedOnAdd()
@@ -96,7 +96,7 @@ namespace Sicom.WebApi.Migrations
                     b.ToTable("Establecimientos");
                 });
 
-            modelBuilder.Entity("SiComSPF.Models.EstadoLinea", b =>
+            modelBuilder.Entity("Sicom.Dominio.Entidades.EstadoLinea", b =>
                 {
                     b.Property<decimal>("Id")
                         .ValueGeneratedOnAdd()
@@ -113,7 +113,7 @@ namespace Sicom.WebApi.Migrations
                     b.ToTable("EstadosLineas");
                 });
 
-            modelBuilder.Entity("SiComSPF.Models.LineaAdministrativa", b =>
+            modelBuilder.Entity("Sicom.Dominio.Entidades.LineaAdministrativa", b =>
                 {
                     b.Property<decimal>("Id")
                         .ValueGeneratedOnAdd()
@@ -178,7 +178,7 @@ namespace Sicom.WebApi.Migrations
                     b.ToTable("LineasAdministrativas");
                 });
 
-            modelBuilder.Entity("SiComSPF.Models.LineaCelular", b =>
+            modelBuilder.Entity("Sicom.Dominio.Entidades.LineaCelular", b =>
                 {
                     b.Property<decimal>("Id")
                         .ValueGeneratedOnAdd()
@@ -250,7 +250,7 @@ namespace Sicom.WebApi.Migrations
                     b.ToTable("LineasCelulares");
                 });
 
-            modelBuilder.Entity("SiComSPF.Models.LineaPublica", b =>
+            modelBuilder.Entity("Sicom.Dominio.Entidades.LineaPublica", b =>
                 {
                     b.Property<decimal>("Id")
                         .ValueGeneratedOnAdd()
@@ -317,7 +317,7 @@ namespace Sicom.WebApi.Migrations
                     b.ToTable("LineasPublicas");
                 });
 
-            modelBuilder.Entity("SiComSPF.Models.Localidad", b =>
+            modelBuilder.Entity("Sicom.Dominio.Entidades.Localidad", b =>
                 {
                     b.Property<decimal>("Id")
                         .ValueGeneratedOnAdd()
@@ -339,7 +339,7 @@ namespace Sicom.WebApi.Migrations
                     b.ToTable("Localidades");
                 });
 
-            modelBuilder.Entity("SiComSPF.Models.MarcaCelular", b =>
+            modelBuilder.Entity("Sicom.Dominio.Entidades.MarcaCelular", b =>
                 {
                     b.Property<decimal>("Id")
                         .ValueGeneratedOnAdd()
@@ -356,7 +356,7 @@ namespace Sicom.WebApi.Migrations
                     b.ToTable("MarcasCelulares");
                 });
 
-            modelBuilder.Entity("SiComSPF.Models.ModalidadLinea", b =>
+            modelBuilder.Entity("Sicom.Dominio.Entidades.ModalidadLinea", b =>
                 {
                     b.Property<decimal>("Id")
                         .ValueGeneratedOnAdd()
@@ -373,7 +373,7 @@ namespace Sicom.WebApi.Migrations
                     b.ToTable("ModalidadesLineas");
                 });
 
-            modelBuilder.Entity("SiComSPF.Models.ModeloCelular", b =>
+            modelBuilder.Entity("Sicom.Dominio.Entidades.ModeloCelular", b =>
                 {
                     b.Property<decimal>("Id")
                         .ValueGeneratedOnAdd()
@@ -395,7 +395,7 @@ namespace Sicom.WebApi.Migrations
                     b.ToTable("ModelosCelulares");
                 });
 
-            modelBuilder.Entity("SiComSPF.Models.Modulo", b =>
+            modelBuilder.Entity("Sicom.Dominio.Entidades.Modulo", b =>
                 {
                     b.Property<decimal>("Id")
                         .ValueGeneratedOnAdd()
@@ -417,7 +417,7 @@ namespace Sicom.WebApi.Migrations
                     b.ToTable("Modulos");
                 });
 
-            modelBuilder.Entity("SiComSPF.Models.Observacion", b =>
+            modelBuilder.Entity("Sicom.Dominio.Entidades.Observacion", b =>
                 {
                     b.Property<decimal>("Id")
                         .ValueGeneratedOnAdd()
@@ -457,7 +457,7 @@ namespace Sicom.WebApi.Migrations
                     b.ToTable("Observaciones");
                 });
 
-            modelBuilder.Entity("SiComSPF.Models.OrigenServicio", b =>
+            modelBuilder.Entity("Sicom.Dominio.Entidades.OrigenServicio", b =>
                 {
                     b.Property<decimal>("Id")
                         .ValueGeneratedOnAdd()
@@ -474,7 +474,7 @@ namespace Sicom.WebApi.Migrations
                     b.ToTable("OrigenesServicios");
                 });
 
-            modelBuilder.Entity("SiComSPF.Models.Pabellon", b =>
+            modelBuilder.Entity("Sicom.Dominio.Entidades.Pabellon", b =>
                 {
                     b.Property<decimal>("Id")
                         .ValueGeneratedOnAdd()
@@ -502,7 +502,7 @@ namespace Sicom.WebApi.Migrations
                     b.ToTable("Pabellones");
                 });
 
-            modelBuilder.Entity("SiComSPF.Models.PrestadorServicio", b =>
+            modelBuilder.Entity("Sicom.Dominio.Entidades.PrestadorServicio", b =>
                 {
                     b.Property<decimal>("Id")
                         .ValueGeneratedOnAdd()
@@ -519,7 +519,7 @@ namespace Sicom.WebApi.Migrations
                     b.ToTable("PrestadoresServicios");
                 });
 
-            modelBuilder.Entity("SiComSPF.Models.Provincia", b =>
+            modelBuilder.Entity("Sicom.Dominio.Entidades.Provincia", b =>
                 {
                     b.Property<decimal>("Id")
                         .ValueGeneratedOnAdd()
@@ -536,7 +536,7 @@ namespace Sicom.WebApi.Migrations
                     b.ToTable("Provincias");
                 });
 
-            modelBuilder.Entity("SiComSPF.Models.TipoEquipoTelefonico", b =>
+            modelBuilder.Entity("Sicom.Dominio.Entidades.TipoEquipoTelefonico", b =>
                 {
                     b.Property<decimal>("Id")
                         .ValueGeneratedOnAdd()
@@ -553,45 +553,45 @@ namespace Sicom.WebApi.Migrations
                     b.ToTable("TiposEquiposTelefonicos");
                 });
 
-            modelBuilder.Entity("SiComSPF.Models.LineaAdministrativa", b =>
+            modelBuilder.Entity("Sicom.Dominio.Entidades.LineaAdministrativa", b =>
                 {
-                    b.HasOne("SiComSPF.Models.Establecimiento", "Establecimiento")
+                    b.HasOne("Sicom.Dominio.Entidades.Establecimiento", "Establecimiento")
                         .WithMany()
                         .HasForeignKey("EstablecimientoId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("SiComSPF.Models.EstadoLinea", "EstadoLinea")
+                    b.HasOne("Sicom.Dominio.Entidades.EstadoLinea", "EstadoLinea")
                         .WithMany()
                         .HasForeignKey("EstadoLineaId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("SiComSPF.Models.ModalidadLinea", "Modalidad")
+                    b.HasOne("Sicom.Dominio.Entidades.ModalidadLinea", "Modalidad")
                         .WithMany()
                         .HasForeignKey("ModalidadId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("SiComSPF.Models.Modulo", "Modulo")
+                    b.HasOne("Sicom.Dominio.Entidades.Modulo", "Modulo")
                         .WithMany()
                         .HasForeignKey("ModuloId")
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
-                    b.HasOne("SiComSPF.Models.OrigenServicio", "OrigenServicio")
+                    b.HasOne("Sicom.Dominio.Entidades.OrigenServicio", "OrigenServicio")
                         .WithMany()
                         .HasForeignKey("OrigenServicioId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("SiComSPF.Models.Pabellon", "Pabellon")
+                    b.HasOne("Sicom.Dominio.Entidades.Pabellon", "Pabellon")
                         .WithMany()
                         .HasForeignKey("PabellonId")
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
-                    b.HasOne("SiComSPF.Models.PrestadorServicio", "PrestadorServicio")
+                    b.HasOne("Sicom.Dominio.Entidades.PrestadorServicio", "PrestadorServicio")
                         .WithMany()
                         .HasForeignKey("PrestadorServicioId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -612,39 +612,39 @@ namespace Sicom.WebApi.Migrations
                     b.Navigation("PrestadorServicio");
                 });
 
-            modelBuilder.Entity("SiComSPF.Models.LineaCelular", b =>
+            modelBuilder.Entity("Sicom.Dominio.Entidades.LineaCelular", b =>
                 {
-                    b.HasOne("SiComSPF.Models.Agente", "Agente")
+                    b.HasOne("Sicom.Dominio.Entidades.Agente", "Agente")
                         .WithMany("LineasCelulares")
                         .HasForeignKey("AgenteId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("SiComSPF.Models.Establecimiento", "Establecimiento")
+                    b.HasOne("Sicom.Dominio.Entidades.Establecimiento", "Establecimiento")
                         .WithMany()
                         .HasForeignKey("EstablecimientoId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("SiComSPF.Models.EstadoLinea", "EstadoLinea")
+                    b.HasOne("Sicom.Dominio.Entidades.EstadoLinea", "EstadoLinea")
                         .WithMany()
                         .HasForeignKey("EstadoLineaId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("SiComSPF.Models.MarcaCelular", "Marca")
+                    b.HasOne("Sicom.Dominio.Entidades.MarcaCelular", "Marca")
                         .WithMany()
                         .HasForeignKey("MarcaId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("SiComSPF.Models.ModeloCelular", "Modelo")
+                    b.HasOne("Sicom.Dominio.Entidades.ModeloCelular", "Modelo")
                         .WithMany()
                         .HasForeignKey("ModeloId")
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
-                    b.HasOne("SiComSPF.Models.PrestadorServicio", "PrestadorServicio")
+                    b.HasOne("Sicom.Dominio.Entidades.PrestadorServicio", "PrestadorServicio")
                         .WithMany()
                         .HasForeignKey("PrestadorServicioId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -663,51 +663,51 @@ namespace Sicom.WebApi.Migrations
                     b.Navigation("PrestadorServicio");
                 });
 
-            modelBuilder.Entity("SiComSPF.Models.LineaPublica", b =>
+            modelBuilder.Entity("Sicom.Dominio.Entidades.LineaPublica", b =>
                 {
-                    b.HasOne("SiComSPF.Models.Establecimiento", "Establecimiento")
+                    b.HasOne("Sicom.Dominio.Entidades.Establecimiento", "Establecimiento")
                         .WithMany()
                         .HasForeignKey("EstablecimientoId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("SiComSPF.Models.EstadoLinea", "EstadoLinea")
+                    b.HasOne("Sicom.Dominio.Entidades.EstadoLinea", "EstadoLinea")
                         .WithMany()
                         .HasForeignKey("EstadoLineaId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("SiComSPF.Models.ModalidadLinea", "Modalidad")
+                    b.HasOne("Sicom.Dominio.Entidades.ModalidadLinea", "Modalidad")
                         .WithMany()
                         .HasForeignKey("ModalidadId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("SiComSPF.Models.Modulo", "Modulo")
+                    b.HasOne("Sicom.Dominio.Entidades.Modulo", "Modulo")
                         .WithMany()
                         .HasForeignKey("ModuloId")
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
-                    b.HasOne("SiComSPF.Models.OrigenServicio", "OrigenServicio")
+                    b.HasOne("Sicom.Dominio.Entidades.OrigenServicio", "OrigenServicio")
                         .WithMany()
                         .HasForeignKey("OrigenServicioId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("SiComSPF.Models.Pabellon", "Pabellon")
+                    b.HasOne("Sicom.Dominio.Entidades.Pabellon", "Pabellon")
                         .WithMany()
                         .HasForeignKey("PabellonId")
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
-                    b.HasOne("SiComSPF.Models.PrestadorServicio", "PrestadorServicio")
+                    b.HasOne("Sicom.Dominio.Entidades.PrestadorServicio", "PrestadorServicio")
                         .WithMany()
                         .HasForeignKey("PrestadorServicioId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("SiComSPF.Models.TipoEquipoTelefonico", "TipoEquipoTelefonico")
+                    b.HasOne("Sicom.Dominio.Entidades.TipoEquipoTelefonico", "TipoEquipoTelefonico")
                         .WithMany()
                         .HasForeignKey("TipoEquipoTelefonicoId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -730,18 +730,18 @@ namespace Sicom.WebApi.Migrations
                     b.Navigation("TipoEquipoTelefonico");
                 });
 
-            modelBuilder.Entity("SiComSPF.Models.Localidad", b =>
+            modelBuilder.Entity("Sicom.Dominio.Entidades.Localidad", b =>
                 {
-                    b.HasOne("SiComSPF.Models.Provincia", null)
+                    b.HasOne("Sicom.Dominio.Entidades.Provincia", null)
                         .WithMany("Localidades")
                         .HasForeignKey("ProvinciaId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("SiComSPF.Models.ModeloCelular", b =>
+            modelBuilder.Entity("Sicom.Dominio.Entidades.ModeloCelular", b =>
                 {
-                    b.HasOne("SiComSPF.Models.MarcaCelular", "Marca")
+                    b.HasOne("Sicom.Dominio.Entidades.MarcaCelular", "Marca")
                         .WithMany("Modelos")
                         .HasForeignKey("MarcaCelularId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -750,32 +750,32 @@ namespace Sicom.WebApi.Migrations
                     b.Navigation("Marca");
                 });
 
-            modelBuilder.Entity("SiComSPF.Models.Modulo", b =>
+            modelBuilder.Entity("Sicom.Dominio.Entidades.Modulo", b =>
                 {
-                    b.HasOne("SiComSPF.Models.Establecimiento", null)
+                    b.HasOne("Sicom.Dominio.Entidades.Establecimiento", null)
                         .WithMany("Modulos")
                         .HasForeignKey("EstablecimientoId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("SiComSPF.Models.Observacion", b =>
+            modelBuilder.Entity("Sicom.Dominio.Entidades.Observacion", b =>
                 {
-                    b.HasOne("SiComSPF.Models.Agente", "Agente")
+                    b.HasOne("Sicom.Dominio.Entidades.Agente", "Agente")
                         .WithMany()
                         .HasForeignKey("AgenteId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("SiComSPF.Models.LineaAdministrativa", "LineaAdministrativa")
+                    b.HasOne("Sicom.Dominio.Entidades.LineaAdministrativa", "LineaAdministrativa")
                         .WithMany("Observaciones")
                         .HasForeignKey("LineaAdministrativaId");
 
-                    b.HasOne("SiComSPF.Models.LineaCelular", "LineaCelular")
+                    b.HasOne("Sicom.Dominio.Entidades.LineaCelular", "LineaCelular")
                         .WithMany("Observaciones")
                         .HasForeignKey("LineaCelularId");
 
-                    b.HasOne("SiComSPF.Models.LineaPublica", "LineaPublica")
+                    b.HasOne("Sicom.Dominio.Entidades.LineaPublica", "LineaPublica")
                         .WithMany("Observaciones")
                         .HasForeignKey("LineaPublicaId");
 
@@ -788,51 +788,51 @@ namespace Sicom.WebApi.Migrations
                     b.Navigation("LineaPublica");
                 });
 
-            modelBuilder.Entity("SiComSPF.Models.Pabellon", b =>
+            modelBuilder.Entity("Sicom.Dominio.Entidades.Pabellon", b =>
                 {
-                    b.HasOne("SiComSPF.Models.Modulo", null)
+                    b.HasOne("Sicom.Dominio.Entidades.Modulo", null)
                         .WithMany("Pabellones")
                         .HasForeignKey("ModuloId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("SiComSPF.Models.Agente", b =>
+            modelBuilder.Entity("Sicom.Dominio.Entidades.Agente", b =>
                 {
                     b.Navigation("LineasCelulares");
                 });
 
-            modelBuilder.Entity("SiComSPF.Models.Establecimiento", b =>
+            modelBuilder.Entity("Sicom.Dominio.Entidades.Establecimiento", b =>
                 {
                     b.Navigation("Modulos");
                 });
 
-            modelBuilder.Entity("SiComSPF.Models.LineaAdministrativa", b =>
+            modelBuilder.Entity("Sicom.Dominio.Entidades.LineaAdministrativa", b =>
                 {
                     b.Navigation("Observaciones");
                 });
 
-            modelBuilder.Entity("SiComSPF.Models.LineaCelular", b =>
+            modelBuilder.Entity("Sicom.Dominio.Entidades.LineaCelular", b =>
                 {
                     b.Navigation("Observaciones");
                 });
 
-            modelBuilder.Entity("SiComSPF.Models.LineaPublica", b =>
+            modelBuilder.Entity("Sicom.Dominio.Entidades.LineaPublica", b =>
                 {
                     b.Navigation("Observaciones");
                 });
 
-            modelBuilder.Entity("SiComSPF.Models.MarcaCelular", b =>
+            modelBuilder.Entity("Sicom.Dominio.Entidades.MarcaCelular", b =>
                 {
                     b.Navigation("Modelos");
                 });
 
-            modelBuilder.Entity("SiComSPF.Models.Modulo", b =>
+            modelBuilder.Entity("Sicom.Dominio.Entidades.Modulo", b =>
                 {
                     b.Navigation("Pabellones");
                 });
 
-            modelBuilder.Entity("SiComSPF.Models.Provincia", b =>
+            modelBuilder.Entity("Sicom.Dominio.Entidades.Provincia", b =>
                 {
                     b.Navigation("Localidades");
                 });

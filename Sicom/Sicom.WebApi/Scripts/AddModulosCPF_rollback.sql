@@ -1,0 +1,2 @@
+DELETE FROM Modulos
+WHERE Id IN (20, 26, 29, 3, 15, 36, 40, 41, 110);

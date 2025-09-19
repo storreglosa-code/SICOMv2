@@ -19,10 +19,6 @@ namespace Sicom.Dominio.Entidades
         public ulong AgenteId { get; set; } 
         public virtual Agente? Agente { get; set; }
 
-        [ForeignKey("LineaPublica")]
-        public ulong? LineaPublicaId { get; set; }
-        public virtual LineaPublica? LineaPublica { get; set; }
-
         [ForeignKey("LineaAdministrativa")]
         public ulong? LineaAdministrativaId { get; set; }
         public virtual LineaAdministrativa? LineaAdministrativa { get; set; }
@@ -30,5 +26,9 @@ namespace Sicom.Dominio.Entidades
         [ForeignKey("LineaCelular")]
         public ulong? LineaCelularId { get; set; }
         public virtual LineaCelular? LineaCelular { get; set; }
+
+        [ForeignKey("LineaPublica")]
+        public ulong? LineaPublicaId { get; set; }
+        public virtual LineaPublica? LineaPublica { get; set; }
     }
 }

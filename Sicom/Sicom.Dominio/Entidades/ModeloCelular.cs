@@ -14,6 +14,7 @@ namespace Sicom.Dominio.Entidades
 
         [ForeignKey("MarcaCelular")]
         public ulong MarcaCelularId { get; set; }
+
         public virtual MarcaCelular Marca { get; set; }
 
     }

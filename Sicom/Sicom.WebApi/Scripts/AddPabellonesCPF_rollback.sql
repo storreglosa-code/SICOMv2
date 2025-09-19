@@ -1,0 +1,1 @@
+DELETE FROM Pabellones WHERE (ModuloId>=1) AND (ModuloId<=65)

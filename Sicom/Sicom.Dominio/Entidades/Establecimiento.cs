@@ -18,11 +18,11 @@ namespace Sicom.Dominio.Entidades
         public string Alias { get; set; } = string.Empty;
 
         [Required]
-        [ForeignKey("Provincia")]
+        [ForeignKey("ProvinciaId")]
         public ulong ProvinciaId { get; set; } 
 
         [Required]
-        [ForeignKey("Localidad")]
+        [ForeignKey("LocalidadId")]
         public ulong LocalidadId { get; set; } 
                 
         [Required]

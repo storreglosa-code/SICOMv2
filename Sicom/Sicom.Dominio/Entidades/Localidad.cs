@@ -8,6 +8,7 @@ namespace Sicom.Dominio.Entidades
     {
         [Key]
         public new ulong Id { get; set; }
+
         [Required]
         public string Nombre { get; set; } = string.Empty;
         
